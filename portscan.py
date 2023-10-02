@@ -16,13 +16,13 @@ def scan_ports(target_ip, start_port, end_port):
 
 def main():
     target_ip = input("Enter the target IP address, bro: ")
-    start_port = int(input("Enter the starting port, yeah: "))
+    start_port = int(input("Enter 123the starting port, yeah: "))
     end_port = int(input("Enter the ending port: "))
 
     open_ports = scan_ports(target_ip, start_port, end_port)
 
     if open_ports:
-        print("Open ports on {}: {}".format(target_ip, ", ".join(map(str, open_ports))))
+        print("Open ports on 123 {}: {}".format(target_ip, ", ".join(map(str, open_ports))))
     else:
         print("No open ports found on {} in the specified range.".format(target_ip))
 
